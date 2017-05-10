@@ -10,13 +10,19 @@ https://en.wikipedia.org/wiki/Sleeping_barber_problem
     $ go get github.com/shantanubhadoria/go-sleeping-barber/barbershop
 
 ## Running the code
-Run without any parameters to see usage details
+The module supports multiple barbers, the cli only demonstrates single barber version of the algorithm. The exact time between arrivals
+ time is (pseudo-)randomised but averages around the specified arrival time.
+
+Run the cli without any parameters to see usage details
 
     $ go-sleeping-barber
     Usage: 
 	    go-sleeping-barber <waiting room capacity> <haircut time in milliseconds> <average arrival rate in milliseconds> <shop open time in seconds>
 
-for e.g. to run the stream for a barber 
+Below is a example to run the stream for a single barber in a shop with 
+5 seats in waiting room. Barber takes 500ms to cut each person's hair 
+and 500ms is the average time between customer arrival and the shop closing
+in one second:
 
     $ go-sleeping-barber 5 500 500 1
     Barber is sleeping: Zzzzzzzzzzzzz ...
