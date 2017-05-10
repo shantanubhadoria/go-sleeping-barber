@@ -2,7 +2,7 @@
 
     import "github.com/shantanubhadoria/go-sleeping-barber/barbershop"
 
-Package sleepingbarber package for emulating the sleeping barber problem
+Package sleepingbarber for emulating the sleeping barber problem
 https://en.wikipedia.org/wiki/Sleeping_barber_problem
 
 ## Installation
@@ -10,8 +10,7 @@ https://en.wikipedia.org/wiki/Sleeping_barber_problem
     $ go get github.com/shantanubhadoria/go-sleeping-barber/barbershop
 
 ## Running the code
-The module supports multiple barbers, the cli only demonstrates single barber version of the algorithm. The exact time between arrivals
- time is (pseudo-)randomised but averages around the specified arrival time.
+The module supports multiple barbers, the cli only demonstrates the single barber version of the algorithm. The exact time between arrivals is (pseudo-)randomised but averages around the specified arrival time.
 
 Run the cli without any parameters to see usage details
 
@@ -21,7 +20,7 @@ Run the cli without any parameters to see usage details
 
 Below is a example to run the stream for a single barber in a shop with 
 5 seats in waiting room. Barber takes 500ms to cut each person's hair 
-and 500ms is the average time between customer arrival and the shop closing
+and 500ms is the average time between customer arrival and the shop closes
 in one second:
 
     $ go-sleeping-barber 5 500 500 1
